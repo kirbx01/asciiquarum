@@ -20,11 +20,11 @@ func main(){
 }
 
 for i := 0; i < 5; i++ {
-	fish.X = fish.X + fish.speed
+	fish.X = fish.X + 2*fish.speed
 
 	fmt.Printf("Fish: %s, Position: (%d, %d), Speed: %d\n", fish.Name, fish.X, fish.Y, fish.speed)
 
-	time.Sleep(5000 * time.milliSecond)
+	time.Sleep(500 * time.Millisecond)
 }
 }
 
